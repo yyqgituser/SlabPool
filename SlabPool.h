@@ -33,9 +33,9 @@ template<typename T> class Slab {
 
 template<typename T> class SlabPool {
   private:
-    MiniList<Slab<T>>  fullSlabs;
-    MiniList<Slab<T>>  partialSlabs;
-    MiniList<Slab<T>>  freeSlabs;
+    MiniList<Slab<T> >  fullSlabs;
+    MiniList<Slab<T> >  partialSlabs;
+    MiniList<Slab<T> >  freeSlabs;
 
     unsigned int objectNumPerSlab;
     unsigned int reapThreshHold;
